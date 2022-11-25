@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Character from "./character";
 
 
 const Characters = () => {
@@ -10,41 +11,29 @@ const Characters = () => {
 		.then(response => {
             return response.json()
         }).then(response => {
-            setListOfCharacters(response)
+            setListOfCharacters(response.results)
+            console.log (response)
         })
     }, [])
 
+    
 
 	return (
         <div className="container testimonial-group mt-3">
             <h3 className="text-warning text-start">Characters</h3>
         <div className="row text-center">
-                <div className="col-4">
                     {
                         listOfCharacters.map((character) => {
-                            return <div className="card">
-                                        <img src= "..." className="card-img-top" alt="..."/>
-                                        <div className="card-body">
-                                            <h5 className="card-title">{character.name}</h5>
-                                            <p className="card-text">
-                                                dfsgfsd
-                                            </p>
-                                            <a href="#" className="btn btn-warning">Go!</a>
-                                        </div>
+                            return <div className="col-4">
+                                        <Character 
+                                            name={character.name}
+                                            uid={character.uid}
+                                            image= {"https://starwars-visualguide.com/assets/img/characters/${props.uid}.jpg"}
+                                        />
                                     </div>
                         })
                     }
-                
-            </div>
-		<div className="col-4">2</div>
-		<div className="col-4">3</div>
-		<div className="col-4">4</div>
-		<div className="col-4">5</div>
-		<div className="col-4">6</div>
-		<div className="col-4">7</div>
-		<div className="col-4">8</div>
-		<div className="col-4">9</div>
-	  </div>
+		</div>
 	</div>
     )
     } 
