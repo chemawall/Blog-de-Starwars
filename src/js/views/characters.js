@@ -28,7 +28,7 @@ const Characters = () => {
                                         <Character 
                                             name={character.name}
                                             uid={character.uid}
-                                            image= {"https://starwars-visualguide.com/assets/img/characters/${props.uid}.jpg"}
+                                            image= {`https://starwars-visualguide.com/assets/img/characters/${character.uid}.jpg`}
                                         />
                                     </div>
                         })
