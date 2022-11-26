@@ -4,13 +4,24 @@
     overflow-x: auto;
     white-space: nowrap;
   }
-  .testimonial-group > .row > .col-4 {
+  .testimonial-group > .row > .col-6  {
     display: inline-block;
   }
   
   /* Decorations */
-  .col-4 { color: #fff; font-size: 48px; padding-bottom: 20px; padding-top: 18px; }
+  .col-6 { 
+    color: #fff; 
+    font-size: 48px; 
+    padding-bottom: 20px; 
+    padding-top: 18px;
+    margin-right: 4px;
+    margin-left: 4px
+  }
 
   /*.planets {
     box-shadow: 0px 0px 40px #ffffff;
   }*/
+ .card-img-top{
+    height: 50;
+    width: auto;
+ }

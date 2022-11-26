@@ -24,7 +24,7 @@ const Characters = () => {
         <div className="row text-center">
                     {
                         listOfCharacters.map((character) => {
-                            return <div className="col-4">
+                            return <div className="col-6 col-md-3 bg-dark">
                                         <Character 
                                             name={character.name}
                                             uid={character.uid}
