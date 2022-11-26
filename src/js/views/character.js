@@ -1,16 +1,24 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 const Character = (props) => {
+
+    
     return (
         <div className="row">
             <div className="card bg-dark border border-secondary p-0">
                 <img src= {props.image} className="card-img-top" alt="..."/>
                     <div className="card-body">
                         <h5 className="card-title">{props.name}</h5>
-                        <p className="card-text">
-                            
+                        <p className="card-text text-secondary">
+                            {props.gender}
+                            {props.height}
+                            {props.birth_year}
                         </p>
-                        <a href="#" className="btn btn-warning">Go!</a>
+                        <Link 
+                            to={`/info/${props.uid}`} 
+                            className="btn btn-warning">
+                                Go!</Link>
                     </div>
             </div>
         </div>
