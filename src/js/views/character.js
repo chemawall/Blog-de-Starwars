@@ -18,7 +18,9 @@ const Character = (props) => {
                         <Link 
                             to={`/info/${props.uid}`} 
                             className="btn btn-warning">
-                                Go!</Link>
+                            Go!
+                        </Link>
+                        <button type="button" class="btn btn-outline-warning">corazon</button>
                     </div>
             </div>
         </div>
