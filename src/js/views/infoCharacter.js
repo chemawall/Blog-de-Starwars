@@ -14,22 +14,17 @@ const InfoCharacters = () => {
             return response.json()
         }).then(response => {
             console.log(response)
-            setCharacters(response.results.properties)
+            setCharacters(response.result.properties)
         })
     }, [])
 
     return ( 
         <div>
-            {
-                characters.map((character)=>{
-                    <div className="card mb-3">
-                        <OneCharacter 
-                            name={character.name}
-                        
-                        />  
-                    </div>
-                    })
-            }
+            <OneCharacter 
+                todo={characters}
+                index= {index}
+               
+            />    
         </div>
         )
 }
