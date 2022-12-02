@@ -5,7 +5,7 @@ const OneCharacter = (props) => {
     return (
         <div className="row g-0">
             <div className="col-md-4">
-                <img className="img-fluid rounded-start"/>
+                <img src= {props.image} className="img-fluid rounded-start"/>
             </div>
             <div className="col-md-8">
             <div className="card-body">
@@ -19,6 +19,7 @@ const OneCharacter = (props) => {
                         <li>height: {props.todo.height}</li>
                         <li>mass: {props.todo.mass}</li>
                         <li>skin_color: {props.todo.skin_color}</li>
+                        
                     </ul>
                 </p>
             </div>

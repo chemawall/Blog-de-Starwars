@@ -22,8 +22,8 @@ const InfoCharacters = () => {
         <div>
             <OneCharacter 
                 todo={characters}
-                index= {index}
-               
+                image={`https://starwars-visualguide.com/assets/img/characters/${params.uid}.jpg`}
+            
             />    
         </div>
         )
