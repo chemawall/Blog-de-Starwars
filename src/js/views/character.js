@@ -20,7 +20,7 @@ const Character = (props) => {
                             className="btn btn-warning">
                             Go!
                         </Link>
-                        <button type="button" className="btn btn-outline-warning">corazon</button>
+                        <button type="button" className="btn btn-outline-warning" onClick={}>corazon</button>
                     </div>
             </div>
         </div>
